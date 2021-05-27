@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>countdown vs Hapoel Beer Sheva</h1>
+    <div class="countcontianer" id="countcontianer">
+      <div class="time">
+        <h2 id="days">00</h2>
+        <small>days</small>
+      </div>
+      <div class="time">
+        <h2 id="Hours">00</h2>
+        <small>Hours</small>
+      </div>
+      <div class="time">
+        <h2 id="Minutes">00</h2>
+        <small>Minutes</small>
+      </div>
+      <div class="time">
+        <h2 id="Seconds">00</h2>
+        <small>Seconds</small>
+      </div>
+    </div>
+
+    <style>
+      body {
+        background-image: url("./pic_main12.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        overflow: hidden;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .countcontianer {
+        display: flex;
+        transform: scale(2);
+      }
+      .time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+      }
+      .time h2 {
+        margin: 0 0 5px;
+      }
+
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 45px;
+        }
+        .time {
+          margin: 5px;
+        }
+        .time h2 {
+          font-size: 15px;
+          margin: 0;
+        }
+        .time small {
+          font-size: 10px;
+        }
+      }
+    </style>
+    <script src="./script.js"></script>
+  </body>
+</html>
